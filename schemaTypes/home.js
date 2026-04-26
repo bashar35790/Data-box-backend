@@ -9,14 +9,53 @@ export default {
       type: 'string',
       description: 'The title shown in the browser tab and search engines.',
     },
+    
+// header section
+    {
+      name: 'header',
+      title: 'Header Section',
+      type: 'object',
+      fields: [
+    // ⭐ Ratings
+    {
+              name: 'rating',
+              title: 'Rating Number',
+              type: 'string', // e.g. "4.4"
+    },
+
+    {
+              name: 'rating2',
+              title: 'Rating Number 2',
+              type: 'string', // e.g. "4.4"
+    },
+
+    {
+      name: 'reviewText',
+      title: 'Review Text',
+      type: 'string',
+      description: 'e.g. based on 1,000+ reviews',
+    },
+
+
+  ],
+},
+
+// main her section start from here
+
     {
       name: 'hero',
       title: 'Hero Section',
       type: 'object',
       fields: [
         {
-          name: 'heading',
-          title: 'Heading',
+          name: 'headingFirstText',
+          title: 'Heading First Text',
+          type: 'string',
+        },
+
+        {
+          name: 'headingSecondText',
+          title: 'Heading Second Text',
           type: 'string',
         },
         {
@@ -26,32 +65,19 @@ export default {
           rows: 3,
         },
         {
-          name: 'backgroundImage',
-          title: 'Hero Image',
-          type: 'image',
-          options: {
-            hotspot: true,
-          },
-        },
-        {
           name: 'ctaText',
           title: 'CTA Button Text',
           type: 'string',
         },
-      ],
-    },
-    {
-      name: 'services',
-      title: 'Services / Features',
-      type: 'array',
-      of: [
+       {
+          name: 'ctaText2',
+          title: 'CTA Button Text 2',
+          type: 'string',
+        },
         {
-          type: 'object',
-          fields: [
-            {name: 'title', title: 'Title', type: 'string'},
-            {name: 'description', title: 'Description', type: 'text', rows: 2},
-            {name: 'icon', title: 'Icon Name (Lucide)', type: 'string', description: 'e.g. Activity, Shield, Zap'},
-          ],
+          name: 'underTheButtonsText',
+          title: 'Under The Buttons Text',
+          type: 'string',
         },
       ],
     },
