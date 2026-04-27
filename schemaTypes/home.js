@@ -86,5 +86,92 @@ export default {
         },
       ],
     },
+
+    // hero intro section start from here
+
+    {
+      name: 'heroIntro',
+      title: 'Hero Intro Section',
+      type: 'object',
+      fields: [
+        {
+          name: 'colorIntroHeading',
+          title: 'Color Intro Heading',
+          type: 'string',
+          initialValue: '20,000+ scaling teams & agencies',
+        },
+
+        {
+          name: 'introHeadingSecoundPart',
+          title: 'Intro Heading Secound Part',
+          type: 'string',
+          initialValue: 'drive results that matter',
+        },
+        {
+          name: 'cards',
+          title: 'Cards',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              name: 'cardItem',
+              title: 'Card Item',
+              fields: [
+                {
+                  name: 'title',
+                  title: 'Title',
+                  type: 'string',
+                  initialValue: '55%',
+                },
+                {
+                  name: 'description',
+                  title: 'Description',
+                  type: 'string',
+                  initialValue: 'increase in sales YoY',
+                },
+                {
+                  name: 'icon',
+                  title: 'Icon',
+                  type: 'string',
+                  options: {
+                    list: [
+                      { title: 'Trending Up', value: 'TrendingUp' },
+                      { title: 'Trending Down', value: 'TrendingDown' },
+                    ],
+                  },
+                  initialValue: 'TrendingUp',
+                },
+                {
+                  name: 'logo',
+                  title: 'Logo Image',
+                  type: 'url',
+                  description: "Paste image URL here (e.g. https://example.com/logo.png)",
+                  initialValue: 'https://cdnwebsite.databox.com/wp-content/uploads/2024/01/25053353/First_Response_logo-1.png',
+                },
+              ],
+            },
+          ],
+          initialValue: [
+            {
+              title: '55%',
+              description: 'increase in sales YoY',
+              icon: 'trendingUp',
+            },
+            {
+              title: '50%',
+              description: 'decrease in overall reporting costs',
+              icon: 'trendingDown',
+            },
+            {
+              title: '60%',
+              description: 'reduction in time spent creating reports',
+              icon: 'trendingDown',
+            },
+          ],
+        },
+      ],
+    },
+
+
   ],
 }
