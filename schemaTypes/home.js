@@ -205,7 +205,7 @@ export default {
           type: 'image',
           options: {
             hotspot: true,
-            initialValue:"dashboard"
+            initialValue: 'dashboard',
           },
         },
 
@@ -281,7 +281,228 @@ export default {
               name: 'lightText',
               title: 'Light Text',
               type: 'string',
-              initialValue: "Genie your business context",
+              initialValue: 'Genie your business context',
+            },
+          ],
+        },
+      ],
+    },
+
+    //why us section
+    {
+      name: 'whyUsSection',
+      title: 'Why Us Section',
+      type: 'object',
+      fields: [
+        // 🔹 Header
+        {
+          name: 'headingLine1',
+          title: 'Heading Line 1',
+          type: 'string',
+          initialValue: 'Business intelligence,',
+        },
+        {
+          name: 'headingHighlight',
+          title: 'Highlighted Heading',
+          type: 'string',
+          initialValue: 'without the baggage',
+        },
+        {
+          name: 'description',
+          title: 'Description',
+          type: 'text',
+          rows: 4,
+          initialValue:
+            'Databox removes the complicated setup, steep price, and long learning curve...',
+        },
+
+        // 🔹 Before Section
+        {
+          name: 'beforeSection',
+          title: 'Before Section (Pain Points)',
+          type: 'object',
+          fields: [
+            {
+              name: 'title',
+              title: 'Title',
+              type: 'string',
+              initialValue: 'Before Databox',
+            },
+            {
+              name: 'subtitle',
+              title: 'Subtitle',
+              type: 'string',
+              initialValue: 'The Old Way',
+            },
+            {
+              name: 'items',
+              title: 'Points List',
+              type: 'array',
+              of: [{type: 'string'}],
+            },
+          ],
+        },
+
+        // 🔹 After Section
+        {
+          name: 'afterSection',
+          title: 'After Section (Solution)',
+          type: 'object',
+          fields: [
+            {
+              name: 'title',
+              title: 'Title',
+              type: 'string',
+              initialValue: 'With Databox',
+            },
+            {
+              name: 'subtitle',
+              title: 'Subtitle',
+              type: 'string',
+              initialValue: 'The Solution',
+            },
+            {
+              name: 'items',
+              title: 'Points List',
+              type: 'array',
+              of: [{type: 'string'}],
+            },
+          ],
+        },
+
+        // 🔹 CTA Section
+        {
+          name: 'cta',
+          title: 'CTA Section',
+          type: 'object',
+          fields: [
+            {
+              name: 'buttonText',
+              title: 'Button Text',
+              type: 'string',
+              initialValue: 'Try It Free',
+            },
+            {
+              name: 'bottomText',
+              title: 'Bottom Text',
+              type: 'string',
+              initialValue: 'No credit card required',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: 'howItWorksSection',
+      title: 'How It Works Section',
+      type: 'object',
+      fields: [
+        // 🔹 Header
+        {
+          name: 'headingFirstPart',
+          title: 'Heading First Part',
+          type: 'string',
+          initialValue: 'Your',
+        },
+        {
+          name: 'headingHighlight',
+          title: 'Highlighted Text',
+          type: 'string',
+          initialValue: 'easier, no-code data workflow',
+        },
+        {
+          name: 'subHeading',
+          title: 'Sub Heading',
+          type: 'text',
+          rows: 3,
+          initialValue:
+            'Databox simplifies every step, so your team can focus on improving performance – not process.',
+        },
+
+        // 🔹 Cards
+        {
+          name: 'cards',
+          title: 'Cards',
+          type: 'array',
+          of: [
+            {
+              type: 'object',
+              name: 'cardItem',
+              title: 'Card Item',
+              fields: [
+                {
+                  name: 'title',
+                  title: 'Title',
+                  type: 'string',
+                  initialValue: 'Connect',
+                },
+                {
+                  name: 'description',
+                  title: 'Description',
+                  type: 'text',
+                  rows: 2,
+                  initialValue: 'Connect all your tools, so your data lives in one place.',
+                },
+
+                // 🔹 Features list
+                {
+                  name: 'features',
+                  title: 'Features',
+                  type: 'array',
+                  of: [{type: 'string'}],
+                },
+
+                // 🔹 CTA
+                {
+                  name: 'ctaText',
+                  title: 'CTA Text',
+                  type: 'string',
+                  initialValue: 'Explore →',
+                },
+                {
+                  name: 'ctaLink',
+                  title: 'CTA Link',
+                  type: 'url',
+                },
+
+                // 🔹 Icon name (string → React map করবে)
+                {
+                  name: 'icon',
+                  title: 'Icon',
+                  type: 'string',
+                  options: {
+                    list: [
+                      {title: 'PlugZap', value: 'PlugZap'},
+                      {title: 'Blocks', value: 'Blocks'},
+                      {title: 'ScanEye', value: 'ScanEye'},
+                      {title: 'ScanSearch', value: 'ScanSearch'},
+                      {title: 'Workflow', value: 'Workflow'},
+                      {title: 'Waypoints', value: 'Waypoints'},
+                    ],
+                  },
+                  initialValue: 'PlugZap',
+                },
+              ],
+            },
+          ],
+        },
+
+        // 🔹 Bottom CTA
+        {
+          name: 'bottomCTA',
+          title: 'Bottom CTA',
+          type: 'object',
+          fields: [
+            {
+              name: 'buttonText',
+              title: 'Button Text',
+              type: 'string',
+              initialValue: 'Explore the platform',
+            },
+            {
+              name: 'buttonLink',
+              title: 'Button Link',
+              type: 'url',
             },
           ],
         },
