@@ -287,7 +287,6 @@ export default {
         },
       ],
     },
-
     //why us section
     {
       name: 'whyUsSection',
@@ -392,6 +391,7 @@ export default {
         },
       ],
     },
+    // How It Works
     {
       name: 'howItWorksSection',
       title: 'How It Works Section',
