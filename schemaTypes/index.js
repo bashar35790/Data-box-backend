@@ -18,6 +18,13 @@ import achievements from './sections/achievements'
 import faq from './sections/faq'
 import footer from './sections/footer'
 
+// Pricing Page Sections
+import pricingAddons from './sections/pricing-addons'
+import agencyBanner from './sections/agency-banner'
+import pricingAchievements from './sections/pricing-achievements'
+import pricingTestimonials from './sections/pricing-testimonials'
+import pricingFaq from './sections/pricing-faq'
+
 export const schemaTypes = [
   home, 
   pricing, 
@@ -36,5 +43,11 @@ export const schemaTypes = [
   insights,
   achievements,
   faq,
-  footer
+  footer,
+  // Pricing Sections
+  pricingAddons,
+  agencyBanner,
+  pricingAchievements,
+  pricingTestimonials,
+  pricingFaq
 ]

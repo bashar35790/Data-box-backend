@@ -969,5 +969,30 @@ export default {
       of: [{type: 'image'}],
       description: 'Upload the logos to display at the bottom of the hero section',
     },
+    {
+      name: 'addonsSection',
+      title: 'Addons Section',
+      type: 'pricingAddonsSection'
+    },
+    {
+      name: 'agencyBannerSection',
+      title: 'Agency Banner Section',
+      type: 'agencyBannerSection'
+    },
+    {
+      name: 'achievementsSection',
+      title: 'Achievements Section',
+      type: 'pricingAchievementsSection'
+    },
+    {
+      name: 'testimonialsSection',
+      title: 'Testimonials Section',
+      type: 'pricingTestimonialsSection'
+    },
+    {
+      name: 'faqSection',
+      title: 'FAQ Section',
+      type: 'pricingFaqSection'
+    }
   ],
 }
