@@ -13,12 +13,6 @@ export default {
           type: 'object',
           fields: [
             {
-              name: 'platform',
-              title: 'Platform Name',
-              type: 'string',
-              initialValue: 'G2'
-            },
-            {
               name: 'rating',
               title: 'Rating',
               type: 'string',
