@@ -3,6 +3,7 @@ export default {
   title: 'Achievements Section',
   type: 'object',
   fields: [
+    // ⭐ Ratings (Dynamic)
     {
       name: 'ratings',
       title: 'Ratings',
@@ -11,24 +12,60 @@ export default {
         {
           type: 'object',
           fields: [
-            { name: 'platformLogo', title: 'Platform Logo', type: 'image' },
-            { name: 'ratingValue', title: 'Rating Value', type: 'string', initialValue: '4.4' },
-            { name: 'platformName', title: 'Platform Name', type: 'string' },
+            {
+              name: 'platform',
+              title: 'Platform Name',
+              type: 'string',
+              initialValue: 'G2'
+            },
+            {
+              name: 'rating',
+              title: 'Rating',
+              type: 'string',
+              initialValue: '4.4'
+            }
           ]
         }
       ]
     },
+
+    // 📝 Review Text
     {
-      name: 'reviewSummary',
+      name: 'reviewText',
       title: 'Review Summary Text',
       type: 'string',
-      initialValue: 'based on 1,000+ reviews',
+      initialValue: 'based on 1,000+ reviews'
     },
+
+    // 🏆 Awards Logos (Slider)
     {
-      name: 'awardsLogos',
+      name: 'awards',
       title: 'Awards Logos',
       type: 'array',
-      of: [{ type: 'image', options: { hotspot: true } }]
+      of: [
+        {
+          type: 'object',
+          fields: [
+            {
+              name: 'logo',
+              title: 'Logo',
+              type: 'image',
+              options: { hotspot: true }
+            },
+            {
+              name: 'alt',
+              title: 'Alt Text',
+              type: 'string',
+              initialValue: 'Award logo'
+            },
+            {
+              name: 'link',
+              title: 'Optional Link',
+              type: 'string'
+            }
+          ]
+        }
+      ]
     }
   ]
-}
+};
